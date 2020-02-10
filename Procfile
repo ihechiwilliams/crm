@@ -1,1 +1,1 @@
-web: gunicorn crm:app
+web: gunicorn CRM:app
