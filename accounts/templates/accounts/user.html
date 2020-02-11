@@ -8,13 +8,14 @@
     <div class="col-md">
         <div class="card card-body">
             <table class="table table-sm">
+                <thead class="thead-dark">
                 <tr>
                     <th>Product</th>
                     <th>Note</th>
                     <th>Date Ordered</th>
                     <th>Status</th>
                 </tr>
-
+                </thead>
                 {% for order in orders %}
                     <tr>
                         <td>{{order.product}}</td>

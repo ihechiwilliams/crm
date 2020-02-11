@@ -13,11 +13,13 @@
         <div class="card card-body">
             <a class="btn btn-primary btn-sm btn-block" href="#">Create Customer</a>
             <table class="table table-sm">
+                <thead class="thead-dark">
                 <tr>
                     <th></th>
                     <th>Customer</th>
                     <th>Phone</th>
                 </tr>
+                </thead>
                 {% for customer in customers %}
                     <tr>
                         <td><a class="btn btn-sm btn-info" href="{% url 'customer' customer.id %}">View</a></td>
@@ -34,6 +36,7 @@
         <hr />
         <div class="card card-body">
          <table class="table table-sm table-responsive-sm">
+             <thead class="thead-dark">
              <tr>
                  <th>Product</th>
                  <th>Date Ordered</th>
@@ -41,6 +44,7 @@
                  <th>Update</th>
                  <th>Remove</th>
              </tr>
+             </thead>
              {% for order in orders %}
                 <tr>
                     <td>{{order.product}}</td>
